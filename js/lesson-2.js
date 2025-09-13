@@ -176,39 +176,39 @@
 // Якщо вказані властивості в обʼєкті відсутні (тобто метод exist повертає false),
 // методи sum і mult мають повертати рядок 'No such propeties'
 
-calculator = {
-  read(a, b) {
-    this.fA = a;
-    this.sB = b;
-  },
-  sum() {
-    if (this.exist()) {
-      return this.fA + this.sB;
-    } else {
-      return "No such propeties";
-    }
-  },
-  mult() {
-    if (this.exist()) {
-      return this.fA * this.sB;
-    } else {
-      return "No such propeties";
-    }
-  },
-  exist() {
-    if (this.fA && this.sB) {
-      return true;
-    } else {
-      return false;
-    }
-  },
-};
+// calculator = {
+//   read(a, b) {
+//     this.fA = a;
+//     this.sB = b;
+//   },
+//   sum() {
+//     if (this.exist()) {
+//       return this.fA + this.sB;
+//     } else {
+//       return "No such propeties";
+//     }
+//   },
+//   mult() {
+//     if (this.exist()) {
+//       return this.fA * this.sB;
+//     } else {
+//       return "No such propeties";
+//     }
+//   },
+//   exist() {
+//     if (this.fA && this.sB) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   },
+// };
 
-calculator.read(10, 20);
-console.log(calculator.sum());
-console.log(calculator.mult());
-console.log(calculator.exist());
-console.log(calculator);
+// calculator.read(10, 20);
+// console.log(calculator.sum());
+// console.log(calculator.mult());
+// console.log(calculator.exist());
+// console.log(calculator);
 
 // Напишіть функцію calcTotalPrice(fruits, fruitName),
 // яка приймає массив об'єктів (fruits) і рядок з назвою фрукта (fruitName).
