@@ -243,47 +243,47 @@
 //  - department - відділ, в якому працює співробітник.
 // Крім того, клас `Employee` має мати метод `getEmployeeDetails()`, який повертає об'єкт з зарплатою співробітника та відділом, в якому він працює.
 
-class Person {
-  constructor(data) {
-    this.name = data.name;
-    this.age = data.age;
-    this.gender = data.gender;
-    this.email = data.email;
-  }
-  getDetails() {
-    return {
-      name: this.name,
-      age: this.age,
-      gender: this.gender,
-      email: this.email,
-    };
-  }
-}
+// class Person {
+//   constructor(data) {
+//     this.name = data.name;
+//     this.age = data.age;
+//     this.gender = data.gender;
+//     this.email = data.email;
+//   }
+//   getDetails() {
+//     return {
+//       name: this.name,
+//       age: this.age,
+//       gender: this.gender,
+//       email: this.email,
+//     };
+//   }
+// }
 
-class Employee extends Person {
-  constructor(obj) {
-    super(obj);
+// class Employee extends Person {
+//   constructor(obj) {
+//     super(obj);
 
-    this.salary = obj.salary;
-    this.department = obj.department;
-  }
-  getEmployeeDetails() {
-    return {
-      salary: this.salary,
-      department: this.department,
-    };
-  }
-}
+//     this.salary = obj.salary;
+//     this.department = obj.department;
+//   }
+//   getEmployeeDetails() {
+//     return {
+//       salary: this.salary,
+//       department: this.department,
+//     };
+//   }
+// }
 
-const bogdan = {
-  name: "Bogdan",
-  age: 27,
-  gender: "male",
-  email: "bodgan.ost@97.gmail.com",
-  salary: 20000,
-  department: "Alladin",
-};
+// const bogdan = {
+//   name: "Bogdan",
+//   age: 27,
+//   gender: "male",
+//   email: "bodgan.ost@97.gmail.com",
+//   salary: 20000,
+//   department: "Alladin",
+// };
 
-const Bogdan = new Employee(bogdan);
+// const Bogdan = new Employee(bogdan);
 
-console.log(Bogdan);
+// console.log(Bogdan);
